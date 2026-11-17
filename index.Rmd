@@ -1,0 +1,485 @@
+---
+title: "De pirámides a la forma del Universo"
+subtitle: "Teorema de Pitágoras"
+author: "Arturo Sánchez González"
+institute: <span style="color:#D40828"> Scotiabank México
+date: "25 de noviembre de 2025"
+output:
+  xaringan::moon_reader:
+    #css: xaringan-themer.css
+    css: [default, chocolate-fonts, ucolors.css, metropolis]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+# to know the themes available use
+# names(xaringan:::list_css())
+# Para saber otras posibilidades con xaeringanthemer vea
+# https://www.garrickadenbuie.com/blog/xaringanthemer-v0-3-0/
+#    includes:
+#      after_body: insert-logo.html
+#esto fue tomado de https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/
+---
+class: inverse, center, middle
+
+```{r xaringan-opts, echo=FALSE}
+library(xaringanExtra)
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_scribble()
+#xaringanExtra::use_share_again()
+#xaringanExtra::style_share_again(
+#  share_buttons = c("twitter")
+#)
+```
+
+<span style="font-size:35px;color:white"> Un poco de historia
+
+<span style="font-size:30px;color:white"> ¿Quiénes desarrollaron el Teorema de Pitágoras?
+---
+# Un momento... ¿no fue Pitágoras?
+
+.pull-left[
+
+</br>
+
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("Plimpton_322.jpg")
+```
+
+<small> Tomada de [Babylonian tablet listing pythagorean triples](https://es.wikipedia.org/wiki/Plimpton_322#/media/Archivo:Plimpton_322.jpg).
+
+]
+
+.pull-right[
+
+* La tablilla **Plimpton 322** fue escrita entre 1822 y 1762 a. C.
+
+* Se descubrió en Irak (donde se desarrolló la civilación babilonia).
+
+* Distintos análisis sugieren que Plimpton 322 contiene **ternas pitagóricas**.
+
+* La tableta fue descubierta por [Edgar James Banks](https://en.wikipedia.org/wiki/Edgar_James_Banks). En él se inspiraron para Indiana Jones.
+
+```{r out.width = '50%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("Edgar_James_Banks.jpg")
+```
+
+]
+---
+# ¿Ternas pitagóricas?
+
+.pull-left[
+### ¿Qué son?
+
+Es un arreglo ordenado de 3 números enteros positivos $\color{red}{a}$, $\color{blue}{b}$ y $\color{darkgreen}{c}$ tales que
+
+$$
+  \color{red}{a}^2 + \color{blue}{b}^2 = \color{darkgreen}{c}^2 
+$$
+
+Notar que se trata de un problema "algebraico", por eso no hay dibujos (todavía).
+
+
+### Ejemplos
+
+* La terna $(\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})$ es pitagórica porque
+
+$$
+\color{red}{3}^2 + \color{blue}{4}^2  = 9 + 16 = 25 = \color{darkgreen}{5}^2
+$$
+* La terna $(\color{red}{5},\ \color{blue}{12},\ \color{darkgreen}{13})$ también es pitagórica.
+]
+
+
+.pull-right[
+### Propiedad importante
+
+Si multiplicamos cada número de una terna pitagórica por un mismo entero positivo, obtenemos otra terna pitagórica.
+
+
+### Ejemplo
+
+* Empezamos con $(\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})$.
+* Multiplicamos cada número de la terna por $\textbf{4}$.
+* Obtenemos $(\color{darkred}{12},\ \color{darkblue}{16},\ \color{darkgreen}{20})$, y notamos que
+
+$$
+\color{darkred}{12}^2 + \color{darkblue}{16}^2 = 144 + 256 = 400 = \color{darkgreen}{20}^2
+$$
+]
+
+---
+# ¿Cómo lo usaban?
+
+.pull-left[
+
+</br>
+</br>
+
+Se sugiere que los egipcios unían 12 segmentos de soga de la misma longitud.
+
+Entonces estiraban $\color{darkgreen}{5}$ de dichos segmentos consecutivos.
+
+Luego tiraban del lazo para formar un triángulo $(\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})$ que es **triángulo rectángulo**.
+
+]
+
+.pull-right[
+
+</br>
+
+```{r out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("egipcios.png")
+```
+
+<small> Tomada de [Teorema de Pitágoras](https://www.jica.go.jp/Resource/project/elsalvador/004/materials/ku57pq00003uf5za-att/text_JS3_06.pdf).
+]
+
+---
+# ¿Todavía se usa?
+
+</br>
+
+
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("trazado-de-escuadra.jpg")
+```
+
+<small> Tomada de [Consejo de construcción al trazar a escuadra](https://www.construyendoseguro.com/consejo-de-construccion-al-trazar-a-escuadra/).
+
+---
+# Ahora, ¿áreas?
+
+.pull-left[
+
+Los griegos no sabían álgebra, entonces, ¿que decía el **Teorema de Pitágoras**?
+
+</br>
+
+<span style="font-size:32px"> El <span style="color:darkgreen">área del cuadrado</span> construido sobre el lado opuesto al ángulo recto es igual a la <span style="color:darkred">suma de las áreas de los cuadrados</span> construidos sobre los lados que comprenden el ángulo recto.
+]
+
+.pull-right[
+
+</br>
+
+```{r out.width = '500%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("teorema_pitagoras.png")
+```
+
+]
+
+---
+# Mejor agregamos álgebra
+
+.pull-left[
+
+<span style="font-size:25px"> Como se observa, el resultado geométrico es complicado. Por ello, si consideramos que $\color{red}{a}$ y $\color{blue}{b}$ son las longitudes de los **catetos** de un triángulo rectángulo y $\color{darkgreen}{c}$ es la longitud de la **hipotenusa**, entonces
+
+<span style="font-size:25px"> $$
+  \color{red}{a}^2 + \color{blue}{b}^2 = \color{darkgreen}{c}^2 
+$$
+
+</br>
+¿Qué representa cada uno de esos cuadrados?
+]
+
+
+.pull-right[
+
+</br>
+
+```{r out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("teo_pit_alg.png")
+```
+
+Tomada de [Enciclopedia Humanidades](https://humanidades.com/teorema-pitagoras/).
+]
+---
+class: inverse, center
+
+</br>
+
+</br>
+
+</br>
+
+<span style="font-size:35px;color:white"> ¿Por qué es importante el Teorema de Pitágoras?
+
+---
+# Alineación de terrenos y escalas
+
+.pull-left[
+
+* <span style="font-size:20px"> Cada año, el río Nilo se desbordaba, entonces tenían que realinear los terrenos: usaban el triángulo $(\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})$.
+
+</br>
+
+```{r out.width = '120%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("agrimensores.jpeg")
+```
+
+]
+
+
+.pull-right[
+
+* <span style="font-size:20px"> EL Teorema de Pitágoras es equivalente a la semejanza de triángulos, por lo cual se pueden hacer modelos a escala: esto se usa en el diseño de cualquier edificio.
+
+</br>
+
+```{r out.width = '120%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("piramides.jpeg")
+```
+]
+---
+# Trigonometría
+
+.pull-left[
+
+</br>
+* <span style="font-size:20px"> Para algunos historiadores, Plimpton 322 es una de las primeras tablas trigonométricas.
+
+
+* <span style="font-size:20px"> Las funciones trigonométricas se pueden definir a partir de un triángulo rectángulo: ¡¡ las identidades que conocemos se obtienen a partir del Teorema de Pitágoras !!
+
+
+* <span style="font-size:20px"> También las leyes de senos y cosenos se deducen del Teorema de Pitágoras.
+]
+
+
+.pull-right[
+
+</br>
+
+</br>
+```{r out.width = '140%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("razones-trigonometricas.jpg")
+```
+]
+
+---
+# Versiones curiosas del Teorema de Pitágoras
+
+* <span style="font-size:20px"> ¿Y si en lugar de cuadrados ponemos otrs figuras?, ¿se mantiene alguna relación entre las áreas? 
+
+* <span style="font-size:20px"> Para que el problema sea sencillo, consideremos solo figuras **regulares**.
+
+.pull-left[
+
+```{r out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("areas_triangulo.png")
+```
+]
+
+.pull-right[
+<span style="font-size:20px"> Tenemos que el área de un triángulo equilátero de lado $\color{darkred}{l}$ es
+
+<span style="font-size:20px"> $$
+\text{Área(triángulo)} = \color{darkrblue}{\frac{\sqrt{3}}{4}}\color{darkred}{l}^2
+$$
+<span style="font-size:20px"> Entonces, si los **catetos** miden $\color{red}{a}$ y $\color{blue}{b}$ y la hipotenusa mide $\color{darkgreen}{c}$ tenemos que
+
+<span style="font-size:20px"> $$
+\begin{aligned}
+\frac{\sqrt{3}}{4} \color{red}{a}^2 + \frac{\sqrt{3}}{4} \color{blue}{b}^2 & = \frac{\sqrt{3}}{4} \left( \color{red}{a}^2 + \color{blue}{b}^2 \right) \\
+& = \frac{\sqrt{3}}{4} \color{darkgreen}{c}^2
+\end{aligned}
+$$
+]
+
+
+---
+# ¿Y sí ponemos un círculo?
+
+.pull-left[
+
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("areas_circulo.png")
+```
+]
+
+.pull-right[
+
+
+<span style="font-size:20px"> El área de medío círculo de radio $\color{darkblue}{r}$ es 
+
+<span style="font-size:20px"> $$
+\text{Área(semicírculo)} = \frac{\pi}{2}\color{darkblue}{r}^2
+$$
+<span style="font-size:20px"> Entonces, si los **catetos** miden $\color{red}{a}$ y $\color{blue}{b}$ y la hipotenusa mide $\color{darkgreen}{c}$ tenemos que los respectivos radios son $\frac{\color{red}{a}}{2}$, $\frac{\color{blue}{b}}{2}$ y $\frac{\color{darkgreen}{c}}{2}$, por lo cual:
+
+<span style="font-size:20px"> $$
+\begin{aligned}
+\frac{\pi}{2} \left(\frac{\color{red}{a}}{2}\right)^2 + \frac{\pi}{2} \left(\frac{\color{blue}{b}}{2}\right)^2 & = \frac{\pi}{2} \left( \frac{\color{red}{a}^2}{4} + \frac{\color{blue}{b}^2}{4} \right) \\
+& = \frac{\pi}{8} \left( \color{red}{a}^2 + \color{blue}{b}^2\right) \\
+& = \frac{\pi}{8} \color{darkgreen}{c}^2 \\
+& = \frac{\pi}{2} \left(\frac{\color{darkgreen}{c}^2}{4}\right) \\
+& = \frac{\pi}{2} \left(\frac{\color{darkgreen}{c}}{2}\right)^2
+\end{aligned}
+$$
+
+]
+---
+# ¿Puede ser un $n$-ágono?
+
+.pull-left[
+
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("n-agon.jpg")
+```
+]
+
+.pull-right[
+<span style="font-size:20px"> Sabemos que el área de un polígono regular de $n$ lados es
+
+<span style="font-size:20px"> $$
+\text{Área(polígono)} = \frac{P\cdot R}{2}
+$$
+donde $R$ es el apotema y $P=n\cdot a$ el perímetro cuando cada lado mide $\color{red}{a}$.
+
+
+<span style="font-size:20px">  ¿Hay alguna fórmula del área de un $n$-ágono regular que dependa del lado?
+
+
+</br>
+<span style="font-size:20px"> $$
+\text{Área(polígono)} = \color{darkred}{\frac{n}{4\tan\left(\frac{\pi}{n}\right)}} \color{red}{a}^2 
+$$
+]
+
+---
+# ¿Y si no es regular? (1/2)
+
+```{r out.width = '60%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("areas_funciones2.png")
+```
+
+
+<span style="font-size:20px">  En este caso, consideramos <span style="color:darkred"> áreas de regiones semejantes </span> construidas sobre los catetos y la hipotenusa de un triángulo rectángulo.
+
+---
+# ¿Y si no es regular? (2/2)
+
+.pull-left[
+```{r out.width = '100%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("areas_funciones3.png")
+```
+]
+
+.pull-right[
+<span style="font-size:20px"> La semejanza de áreas significa considerar funciones
+
+<span style="font-size:20px"> $$
+\color{red}{g(x)} = \frac{a}{c}\color{darkgreen}{f}\left(\frac{c}{a}x\right) \,\,\,\text{ y }\,\,\, \color{blue}{h(x)} = \frac{b}{c}\color{darkgreen}{f}\left(\frac{c}{b}x\right)
+$$
+<span style="font-size:20px"> ¿Cómo se calcula el área bajo gráficas de funciones? <span style="color:darkred"> Con integrales. </span>
+
+</br>
+
+<span style="font-size:20px"> Tenemos que
+
+<span style="font-size:20px"> $$\int_{0}^{a} \color{red}{g}(x) dx + \int_{0}^{b} \color{blue}{h}(x) dx = \int_{0}^{c} \color{darkgreen}{f}(x) dx$$
+]
+
+---
+class: inverse, center
+
+</br>
+
+</br>
+
+</br>
+
+<span style="font-size:40px;color:white"> ¿Y la forma del Universo?
+
+---
+# El quinto postulado
+
+```{r out.width = '90%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("transversal3_0.png")
+```
+
+---
+# Ángulos interiores de un triángulo
+
+
+```{r out.width = '150%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("suma_interiores.PNG")
+```
+Tomada de [Demostración suma de ángulos interiores de un triángulo](https://matematicalatex.blogspot.com/2017/09/demostracion-suma-de-angulos-interiores.html).
+
+---
+# Empecemos cerca: este salón
+
+```{r out.width = '80%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("salon.png")
+```
+
+---
+# Vamos más lejos: nuestro Planeta
+
+```{r out.width = '70%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("Triangle_trirectangle.png")
+```
+
+---
+# ¿Infinitas paralelas?
+```{r out.width = '70%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("rectas_disco_Poincare.jpg")
+```
+
+---
+# Ahora, en pequeño: unas papitas
+
+</br>
+
+```{r out.width = '100%', echo=FALSE, fig.align='center'}
+#knitr::include_graphics("papita.png")
+knitr::include_graphics("papita2.jpg")
+```
+
+---
+# ¿Qué sabemos?
+
+.pull-left[
+</br>
+
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("gauss.jpeg")
+```
+
+<small> Fotograma de la película **Midiendo el numdo**. Se observa a Gauss midiendo triángulos junto a su esposa.
+]
+
+.pull-right[
+
+</br>
+
+</br>
+
+* <span style="font-size:20px"> Gauss fue un pionero en la idea de medir triángulos.
+
+</br>
+* <span style="font-size:20px"> Se han realizado mediciones con mayor precisión, incluso entre estrellas, pero los resultados no son concluyentes.
+]
+
+---
+
+</br>
+```{r out.width = '110%', echo=FALSE, fig.align='center'}
+knitr::include_graphics("universe.png")
+```
+
+Captura tomada de [How One Line in the Oldest Math Text Hinted at Hidden Universes](https://youtu.be/lFlu60qs7_4?si=0r5vT2NEjHLiiXa_).
+
+---
+class: inverse, center
+
+</br>
+
+</br>
+
+</br>
+
+<span style="font-size:40px;color:white"> ¡Gracias!

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>De pirámides a la forma del Universo</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Arturo Sánchez González" />
+    <script src="index_files/header-attrs-2.14/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="index_files/remark-css-0.0.1/chocolate-fonts.css" rel="stylesheet" />
+    <link href="index_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x2b5b8b5ed594589b49bc1215c4ce1f9","expires":1}</script>
+    <script src="index_files/himalaya-1.1.0/himalaya.js"></script>
+    <script src="index_files/js-cookie-3.0.0/js.cookie.js"></script>
+    <link href="index_files/editable-0.2.6/editable.css" rel="stylesheet" />
+    <script src="index_files/editable-0.2.6/editable.js"></script>
+    <script src="index_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="index_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+    <link rel="stylesheet" href="ucolors.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# De pirámides a la forma del Universo
+## Teorema de Pitágoras
+### Arturo Sánchez González
+### <span style="color:#D40828"> Scotiabank México
+### 25 de noviembre de 2025
+
+---
+
+class: inverse, center, middle
+
+
+
+&lt;span style="font-size:35px;color:white"&gt; Un poco de historia
+
+&lt;span style="font-size:30px;color:white"&gt; ¿Quiénes desarrollaron el Teorema de Pitágoras?
+---
+# Un momento... ¿no fue Pitágoras?
+
+.pull-left[
+
+&lt;/br&gt;
+
+&lt;img src="Plimpton_322.jpg" width="110%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Tomada de [Babylonian tablet listing pythagorean triples](https://es.wikipedia.org/wiki/Plimpton_322#/media/Archivo:Plimpton_322.jpg).
+
+]
+
+.pull-right[
+
+* La tablilla **Plimpton 322** fue escrita entre 1822 y 1762 a. C.
+
+* Se descubrió en Irak (donde se desarrolló la civilación babilonia).
+
+* Distintos análisis sugieren que Plimpton 322 contiene **ternas pitagóricas**.
+
+* La tableta fue descubierta por [Edgar James Banks](https://en.wikipedia.org/wiki/Edgar_James_Banks). En él se inspiraron para Indiana Jones.
+
+&lt;img src="Edgar_James_Banks.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+]
+---
+# ¿Ternas pitagóricas?
+
+.pull-left[
+### ¿Qué son?
+
+Es un arreglo ordenado de 3 números enteros positivos `\(\color{red}{a}\)`, `\(\color{blue}{b}\)` y `\(\color{darkgreen}{c}\)` tales que
+
+$$
+  \color{red}{a}^2 + \color{blue}{b}^2 = \color{darkgreen}{c}^2 
+$$
+
+Notar que se trata de un problema "algebraico", por eso no hay dibujos (todavía).
+
+
+### Ejemplos
+
+* La terna `\((\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})\)` es pitagórica porque
+
+$$
+\color{red}{3}^2 + \color{blue}{4}^2  = 9 + 16 = 25 = \color{darkgreen}{5}^2
+$$
+* La terna `\((\color{red}{5},\ \color{blue}{12},\ \color{darkgreen}{13})\)` también es pitagórica.
+]
+
+
+.pull-right[
+### Propiedad importante
+
+Si multiplicamos cada número de una terna pitagórica por un mismo entero positivo, obtenemos otra terna pitagórica.
+
+
+### Ejemplo
+
+* Empezamos con `\((\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})\)`.
+* Multiplicamos cada número de la terna por `\(\textbf{4}\)`.
+* Obtenemos `\((\color{darkred}{12},\ \color{darkblue}{16},\ \color{darkgreen}{20})\)`, y notamos que
+
+$$
+\color{darkred}{12}^2 + \color{darkblue}{16}^2 = 144 + 256 = 400 = \color{darkgreen}{20}^2
+$$
+]
+
+---
+# ¿Cómo lo usaban?
+
+.pull-left[
+
+&lt;/br&gt;
+&lt;/br&gt;
+
+Se sugiere que los egipcios unían 12 segmentos de soga de la misma longitud.
+
+Entonces estiraban `\(\color{darkgreen}{5}\)` de dichos segmentos consecutivos.
+
+Luego tiraban del lazo para formar un triángulo `\((\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})\)` que es **triángulo rectángulo**.
+
+]
+
+.pull-right[
+
+&lt;/br&gt;
+
+&lt;img src="egipcios.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Tomada de [Teorema de Pitágoras](https://www.jica.go.jp/Resource/project/elsalvador/004/materials/ku57pq00003uf5za-att/text_JS3_06.pdf).
+]
+
+---
+# ¿Todavía se usa?
+
+&lt;/br&gt;
+
+
+&lt;img src="trazado-de-escuadra.jpg" width="110%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Tomada de [Consejo de construcción al trazar a escuadra](https://www.construyendoseguro.com/consejo-de-construccion-al-trazar-a-escuadra/).
+
+---
+# Ahora, ¿áreas?
+
+.pull-left[
+
+Los griegos no sabían álgebra, entonces, ¿que decía el **Teorema de Pitágoras**?
+
+&lt;/br&gt;
+
+&lt;span style="font-size:32px"&gt; El &lt;span style="color:darkgreen"&gt;área del cuadrado&lt;/span&gt; construido sobre el lado opuesto al ángulo recto es igual a la &lt;span style="color:darkred"&gt;suma de las áreas de los cuadrados&lt;/span&gt; construidos sobre los lados que comprenden el ángulo recto.
+]
+
+.pull-right[
+
+&lt;/br&gt;
+
+&lt;img src="teorema_pitagoras.png" width="500%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+# Mejor agregamos álgebra
+
+.pull-left[
+
+&lt;span style="font-size:25px"&gt; Como se observa, el resultado geométrico es complicado. Por ello, si consideramos que `\(\color{red}{a}\)` y `\(\color{blue}{b}\)` son las longitudes de los **catetos** de un triángulo rectángulo y `\(\color{darkgreen}{c}\)` es la longitud de la **hipotenusa**, entonces
+
+&lt;span style="font-size:25px"&gt; $$
+  \color{red}{a}^2 + \color{blue}{b}^2 = \color{darkgreen}{c}^2 
+$$
+
+&lt;/br&gt;
+¿Qué representa cada uno de esos cuadrados?
+]
+
+
+.pull-right[
+
+&lt;/br&gt;
+
+&lt;img src="teo_pit_alg.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+Tomada de [Enciclopedia Humanidades](https://humanidades.com/teorema-pitagoras/).
+]
+---
+class: inverse, center
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;span style="font-size:35px;color:white"&gt; ¿Por qué es importante el Teorema de Pitágoras?
+
+---
+# Alineación de terrenos y escalas
+
+.pull-left[
+
+* &lt;span style="font-size:20px"&gt; Cada año, el río Nilo se desbordaba, entonces tenían que realinear los terrenos: usaban el triángulo `\((\color{red}{3},\ \color{blue}{4},\ \color{darkgreen}{5})\)`.
+
+&lt;/br&gt;
+
+&lt;img src="agrimensores.jpeg" width="120%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.pull-right[
+
+* &lt;span style="font-size:20px"&gt; EL Teorema de Pitágoras es equivalente a la semejanza de triángulos, por lo cual se pueden hacer modelos a escala: esto se usa en el diseño de cualquier edificio.
+
+&lt;/br&gt;
+
+&lt;img src="piramides.jpeg" width="120%" style="display: block; margin: auto;" /&gt;
+]
+---
+# Trigonometría
+
+.pull-left[
+
+&lt;/br&gt;
+* &lt;span style="font-size:20px"&gt; Para algunos historiadores, Plimpton 322 es una de las primeras tablas trigonométricas.
+
+
+* &lt;span style="font-size:20px"&gt; Las funciones trigonométricas se pueden definir a partir de un triángulo rectángulo: ¡¡ las identidades que conocemos se obtienen a partir del Teorema de Pitágoras !!
+
+
+* &lt;span style="font-size:20px"&gt; También las leyes de senos y cosenos se deducen del Teorema de Pitágoras.
+]
+
+
+.pull-right[
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+&lt;img src="razones-trigonometricas.jpg" width="140%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+# Versiones curiosas del Teorema de Pitágoras
+
+* &lt;span style="font-size:20px"&gt; ¿Y si en lugar de cuadrados ponemos otrs figuras?, ¿se mantiene alguna relación entre las áreas? 
+
+* &lt;span style="font-size:20px"&gt; Para que el problema sea sencillo, consideremos solo figuras **regulares**.
+
+.pull-left[
+
+&lt;img src="areas_triangulo.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;span style="font-size:20px"&gt; Tenemos que el área de un triángulo equilátero de lado `\(\color{darkred}{l}\)` es
+
+&lt;span style="font-size:20px"&gt; $$
+\text{Área(triángulo)} = \color{darkrblue}{\frac{\sqrt{3}}{4}}\color{darkred}{l}^2
+$$
+&lt;span style="font-size:20px"&gt; Entonces, si los **catetos** miden `\(\color{red}{a}\)` y `\(\color{blue}{b}\)` y la hipotenusa mide `\(\color{darkgreen}{c}\)` tenemos que
+
+&lt;span style="font-size:20px"&gt; $$
+`\begin{aligned}
+\frac{\sqrt{3}}{4} \color{red}{a}^2 + \frac{\sqrt{3}}{4} \color{blue}{b}^2 &amp; = \frac{\sqrt{3}}{4} \left( \color{red}{a}^2 + \color{blue}{b}^2 \right) \\
+&amp; = \frac{\sqrt{3}}{4} \color{darkgreen}{c}^2
+\end{aligned}`
+$$
+]
+
+
+---
+# ¿Y sí ponemos un círculo?
+
+.pull-left[
+
+&lt;img src="areas_circulo.png" width="110%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+
+&lt;span style="font-size:20px"&gt; El área de medío círculo de radio `\(\color{darkblue}{r}\)` es 
+
+&lt;span style="font-size:20px"&gt; $$
+\text{Área(semicírculo)} = \frac{\pi}{2}\color{darkblue}{r}^2
+$$
+&lt;span style="font-size:20px"&gt; Entonces, si los **catetos** miden `\(\color{red}{a}\)` y `\(\color{blue}{b}\)` y la hipotenusa mide `\(\color{darkgreen}{c}\)` tenemos que los respectivos radios son `\(\frac{\color{red}{a}}{2}\)`, `\(\frac{\color{blue}{b}}{2}\)` y `\(\frac{\color{darkgreen}{c}}{2}\)`, por lo cual:
+
+&lt;span style="font-size:20px"&gt; $$
+`\begin{aligned}
+\frac{\pi}{2} \left(\frac{\color{red}{a}}{2}\right)^2 + \frac{\pi}{2} \left(\frac{\color{blue}{b}}{2}\right)^2 &amp; = \frac{\pi}{2} \left( \frac{\color{red}{a}^2}{4} + \frac{\color{blue}{b}^2}{4} \right) \\
+&amp; = \frac{\pi}{8} \left( \color{red}{a}^2 + \color{blue}{b}^2\right) \\
+&amp; = \frac{\pi}{8} \color{darkgreen}{c}^2 \\
+&amp; = \frac{\pi}{2} \left(\frac{\color{darkgreen}{c}^2}{4}\right) \\
+&amp; = \frac{\pi}{2} \left(\frac{\color{darkgreen}{c}}{2}\right)^2
+\end{aligned}`
+$$
+
+]
+---
+# ¿Puede ser un `\(n\)`-ágono?
+
+.pull-left[
+
+&lt;img src="n-agon.jpg" width="110%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;span style="font-size:20px"&gt; Sabemos que el área de un polígono regular de `\(n\)` lados es
+
+&lt;span style="font-size:20px"&gt; $$
+\text{Área(polígono)} = \frac{P\cdot R}{2}
+$$
+donde `\(R\)` es el apotema y `\(P=n\cdot a\)` el perímetro cuando cada lado mide `\(\color{red}{a}\)`.
+
+
+&lt;span style="font-size:20px"&gt;  ¿Hay alguna fórmula del área de un `\(n\)`-ágono regular que dependa del lado?
+
+
+&lt;/br&gt;
+&lt;span style="font-size:20px"&gt; $$
+\text{Área(polígono)} = \color{darkred}{\frac{n}{4\tan\left(\frac{\pi}{n}\right)}} \color{red}{a}^2 
+$$
+]
+
+---
+# ¿Y si no es regular? (1/2)
+
+&lt;img src="areas_funciones2.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+&lt;span style="font-size:20px"&gt;  En este caso, consideramos &lt;span style="color:darkred"&gt; áreas de regiones semejantes &lt;/span&gt; construidas sobre los catetos y la hipotenusa de un triángulo rectángulo.
+
+---
+# ¿Y si no es regular? (2/2)
+
+.pull-left[
+&lt;img src="areas_funciones3.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;span style="font-size:20px"&gt; La semejanza de áreas significa considerar funciones
+
+&lt;span style="font-size:20px"&gt; $$
+\color{red}{g(x)} = \frac{a}{c}\color{darkgreen}{f}\left(\frac{c}{a}x\right) \,\,\,\text{ y }\,\,\, \color{blue}{h(x)} = \frac{b}{c}\color{darkgreen}{f}\left(\frac{c}{b}x\right)
+$$
+&lt;span style="font-size:20px"&gt; ¿Cómo se calcula el área bajo gráficas de funciones? &lt;span style="color:darkred"&gt; Con integrales. &lt;/span&gt;
+
+&lt;/br&gt;
+
+&lt;span style="font-size:20px"&gt; Tenemos que
+
+&lt;span style="font-size:20px"&gt; `$$\int_{0}^{a} \color{red}{g}(x) dx + \int_{0}^{b} \color{blue}{h}(x) dx = \int_{0}^{c} \color{darkgreen}{f}(x) dx$$`
+]
+
+---
+class: inverse, center
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;span style="font-size:40px;color:white"&gt; ¿Y la forma del Universo?
+
+---
+# El quinto postulado
+
+&lt;img src="transversal3_0.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+# Ángulos interiores de un triángulo
+
+
+&lt;img src="suma_interiores.PNG" width="150%" style="display: block; margin: auto;" /&gt;
+Tomada de [Demostración suma de ángulos interiores de un triángulo](https://matematicalatex.blogspot.com/2017/09/demostracion-suma-de-angulos-interiores.html).
+
+---
+# Empecemos cerca: este salón
+
+&lt;img src="salon.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+# Vamos más lejos: nuestro Planeta
+
+&lt;img src="Triangle_trirectangle.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+# ¿Infinitas paralelas?
+&lt;img src="rectas_disco_Poincare.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+# Ahora, en pequeño: unas papitas
+
+&lt;/br&gt;
+
+&lt;img src="papita2.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+# ¿Qué sabemos?
+
+.pull-left[
+&lt;/br&gt;
+
+&lt;img src="gauss.jpeg" width="110%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Fotograma de la película **Midiendo el numdo**. Se observa a Gauss midiendo triángulos junto a su esposa.
+]
+
+.pull-right[
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+* &lt;span style="font-size:20px"&gt; Gauss fue un pionero en la idea de medir triángulos.
+
+&lt;/br&gt;
+* &lt;span style="font-size:20px"&gt; Se han realizado mediciones con mayor precisión, incluso entre estrellas, pero los resultados no son concluyentes.
+]
+
+---
+
+&lt;/br&gt;
+&lt;img src="universe.png" width="110%" style="display: block; margin: auto;" /&gt;
+
+Captura tomada de [How One Line in the Oldest Math Text Hinted at Hidden Universes](https://youtu.be/lFlu60qs7_4?si=0r5vT2NEjHLiiXa_).
+
+---
+class: inverse, center
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;/br&gt;
+
+&lt;span style="font-size:40px;color:white"&gt; ¡Gracias!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
